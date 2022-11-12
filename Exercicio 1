@@ -1,0 +1,6 @@
+B = float(input('Valor da Base maior: '))
+b = float(input('Valor da Base menor: '))
+h = float(input('Valor da Altura: '))
+a = 2
+formula = ((B + b) * h) / a
+print('Area do Trapezio: ', formula) 
