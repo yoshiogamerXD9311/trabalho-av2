@@ -1,13 +1,13 @@
-hora = int(input("Digite a hora: "))
-minuto = int(input("Digite os minutos: "))
-
-def converter_hora(hora):
-    return (hora -12)
-
-def imprime_hora(hora,minuto):
-    if(hora <= 12):
-        print(hora,minuto,"AM")
-    else:
-        print(converter_hora(hora), minuto, "PM")
-
-imprime_hora(hora, minuto)
+processo=0
+while processo < 2:
+    n1 = int(input("Insira as Horas: "))
+    if n1 == float:
+        print("O numero deve ser inteiro.")
+    n2 = int(input("Insira os Minutos: "))
+    if n2 > 60:
+            print("Erro")
+    if n1 > 12:
+        print(f'{n1 - 12}:{n2}' +  "pm")
+    elif n1 < 12:
+        print(f'{n1}:{n2}' + "am")    
+    processo = int(input("Deseja continuar \n1 - sim \n2- nao: "))
